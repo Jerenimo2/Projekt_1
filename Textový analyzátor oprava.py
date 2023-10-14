@@ -138,7 +138,7 @@ print(cara)
 vyskyt_slov_delka = {}
 
 for slovo in slova:
-    slovo = slovo.strip()
+    slovo = slovo.strip(",.:!?")
     delka_slova = len(slovo)
     if delka_slova not in vyskyt_slov_delka:
         vyskyt_slov_delka[delka_slova] = 1
