@@ -132,7 +132,7 @@ print(cara)
 
 #Program zobrazí jednoduchý sloupcový graf, který bude reprezentovat četnost různých délek slov v textu
 
-print("LEN|    OCCURENCES    |NR.")
+print("LEN|    OCCURENCES     |NR.")
 print(cara)
 
 vyskyt_slov_delka = {}
@@ -146,5 +146,5 @@ for slovo in slova:
         vyskyt_slov_delka[delka_slova] += 1
         
 for delka, pocet in sorted(vyskyt_slov_delka.items()):
-    print(f"{delka:3d}| {'*'*pocet:16s} | {pocet:1d}")
+    print(f"{delka:3d}| {'*'*pocet:17s} | {pocet:1d}")
 print(cara)
